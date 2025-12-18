@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Knowledge Graphs for Data Interoperability with Chimera (KG4DI)"
 permalink: /
 ---
