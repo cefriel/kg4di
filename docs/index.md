@@ -59,19 +59,19 @@ the results within the interactive dashboard.
 ## Speakers
 
 ### Marco Grassi  
-*Knowledge Technologies Researcher, Cefriel – Politecnico di Milano*  
+*Knowledge Technologies Researcher, Cefriel*  
 Marco Grassi focuses on semantic technologies and data interoperability. He is the lead developer of the Chimera framework and the main author of the Chimera tutorial available on GitHub.
 
 ### Mario Scrocca  
-*Senior Knowledge Technologies Researcher, Cefriel – Politecnico di Milano*  
+*Senior Knowledge Technologies Researcher, Cefriel*  
 Mario Scrocca’s research focuses on knowledge representation, data management, and interoperability, with applications in the mobility and industrial domains. He is one of the maintainers of the Chimera framework and has co-organized tutorials on Knowledge Graph Construction, including at ESWC 2022.
 
 ### Alessio Carenini  
-*Senior Researcher, Technical Leader, and Senior Software Architect, Cefriel – Politecnico di Milano*  
+*Senior Researcher, Technical Leader, and Senior Software Architect, Cefriel*  
 Alessio Carenini has over 18 years of experience in European research projects. His work focuses on applying Semantic Web technologies to knowledge management in data sharing ecosystems, with interests in metadata modeling, data spaces, and business process management.
 
 ### Irene Celino  
-*Research Line Manager, Cefriel – Politecnico di Milano*  
+*Research Line Manager, Cefriel*  
 Irene Celino coordinates research activities at Cefriel and has over 20 years of experience in cooperative research projects. Her interests include Knowledge Graphs, semantic interoperability, human-in-the-loop and hybrid AI, and human-centric evaluation of AI.
 
 ---
