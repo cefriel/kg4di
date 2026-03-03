@@ -42,10 +42,10 @@ You will configure and run **Apache Camel routes** powered by Chimera components
 | Step | What happens |
 |------|-------------|
 | **Ingest** | Read GTFS `.zip` archives containing `stops.txt` CSV files for real bus and metro networks |
-| **Lift** | Transform CSV rows into RDF triples using a **Velocity mapping template** |
+| **Lift** | Transform CSV rows into RDF triples using the **Mapping Template Language (MTL)** |
 | **Enrich** | Query **Wikidata** via SPARQL to retrieve nearby landmarks with images and descriptions |
 | **Construct** | Run SPARQL `CONSTRUCT` queries to build the final knowledge graph |
-| **Lower** | Convert RDF back to GeoJSON / JSON for the dashboard using a lowering template |
+| **Lower** | Convert RDF back to CSV for the dashboard using a MTL lowering template |
 | **Visualise** | Watch stops and landmarks appear live on an interactive **Leaflet** map with marker clustering |
 
 ---

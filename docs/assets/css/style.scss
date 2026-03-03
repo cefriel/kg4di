@@ -1,0 +1,11 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+  background-image: url("{{ site.baseurl }}/dubrovnik.png");
+  background-size: cover;
+  background-position: center;
+}
+
