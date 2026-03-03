@@ -1,5 +1,5 @@
-title: kg4di
-description: Knowledge Graphs for Data Interoperability with Chimera
+title: "KG4DI — Knowledge Graphs for Data Interoperability"
+description: "A hands-on tutorial on building semantic data pipelines with the Chimera framework integrating GTFS and Wikidata into an interactive knowledge graph dashboard."
 
 email: chimera-dev@cefriel.com
 
