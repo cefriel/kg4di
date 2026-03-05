@@ -1,0 +1,54 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+#set ($positions = $reader.getDataframe())
+
+CONSTRUCT {
+  ?place a wd:Q618123 ;
+         rdfs:label ?placeLabel ;
+         wdt:P625 ?coord ;
+         schema:image ?image ;
+         geo:lat ?lat ;
+         geo:long ?long .
+}
+WHERE {
+
+  #foreach($position in $positions)
+    {
+      SERVICE wikibase:around {
+        ?place wdt:P625 ?coord .
+        bd:serviceParam wikibase:center "Point($position.long $position.lat)"^^geo:wktLiteral .
+        bd:serviceParam wikibase:radius "0.5" .
+      }
+    }#if($foreach.hasNext) UNION #end
+  #end
+
+  OPTIONAL { ?place wdt:P18 ?image . }
+
+  BIND(
+    xsd:decimal(
+      REPLACE(STR(?coord),
+      "Point\\(([-0-9\\.]+) [-0-9\\.]+\\)",
+      "$1")
+    ) AS ?long
+  )
+
+  BIND(
+    xsd:decimal(
+      REPLACE(STR(?coord),
+      "Point\\([-0-9\\.]+ ([-0-9\\.]+)\\)",
+      "$1")
+    ) AS ?lat
+  )
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en".
+  }
+}
+LIMIT 25
