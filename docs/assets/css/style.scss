@@ -1,17 +1,67 @@
 ---
 ---
 
+// Override Cayman theme primary colours (green → blue) before import
+$header-bg-color: #0a3c82;
+$header-bg-color-secondary: #1a6bbf;
+$section-headings-color: #0a3c82;
+$link-color: #1a6bbf;
+$blockquote-text-color: #2d6db5;
+$body-link-color: #1a6bbf;
+$btn-color: #ffffff;
+$btn-border-color: rgba(255,255,255,0.3);
+
 @import "{{ site.theme }}";
 
 .page-header {
-  background-image: url("{{ site.baseurl }}/dubrovnik.png");
+  background-image: url("{{ site.baseurl }}/unsplash-theme.jpg");
   background-size: cover;
   background-position: center;
+  background-color: #0a3c82;
 }
 
 .page-header .project-name,
 .page-header .project-tagline {
   color: #000000;
   text-shadow: none;
+}
+
+// Buttons
+.btn {
+  color: #fff !important;
+  background-color: #1a6bbf;
+  border-color: #0a3c82;
+
+  &:hover {
+    background-color: #0a3c82;
+    border-color: #072d66;
+  }
+}
+
+// In-page headings & links
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: #0a3c82;
+}
+
+.main-content a {
+  color: #1a6bbf;
+  &:hover { color: #0a3c82; }
+}
+
+// Acknowledgement banner
+.ack-banner {
+  margin-top: 2rem;
+  padding: 0.75rem 1rem;
+  background: #e8f0fc;
+  border-left: 4px solid #1a6bbf;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  color: #1a2a4a;
+  line-height: 1.5;
 }
 

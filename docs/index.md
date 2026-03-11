@@ -142,3 +142,10 @@ Slides and all required materials will be made available on this page no later t
 - **Docker image & setup instructions:** _To be published_  
 
 Please check back closer to the conference date for updates.
+
+---
+
+<div class="ack-banner">
+This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101140087 (<a href="https://smarty-chips.eu" target="_blank" rel="noopener noreferrer">SMARTY</a>, Chips Joint Undertaking).
+</div>
+
