@@ -14,16 +14,34 @@ $btn-border-color: rgba(255,255,255,0.3);
 @import "{{ site.theme }}";
 
 .page-header {
+  position: relative;
   background-image: url("{{ site.baseurl }}/unsplash-theme.jpg");
   background-size: cover;
   background-position: center;
   background-color: #0a3c82;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(10, 60, 130, 0.45);
+    z-index: 0;
+  }
+
+  // Ensure header content sits above the blur overlay
+  > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .page-header .project-name,
 .page-header .project-tagline {
-  color: #000000;
-  text-shadow: none;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 // Buttons
