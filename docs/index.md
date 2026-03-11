@@ -146,6 +146,7 @@ Please check back closer to the conference date for updates.
 ---
 
 <div class="ack-banner">
+<img src="https://www.smarty-project.eu/wp-content/uploads/2024/04/SMARTY-Electric-blue-only-logo-no-BG-COMPLETE.png" alt="SMARTY logo" style="height:32px;vertical-align:middle;margin-right:10px;">
 This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101140087 (<a href="https://smarty-chips.eu" target="_blank" rel="noopener noreferrer">SMARTY</a>, Chips Joint Undertaking).
 </div>
 
