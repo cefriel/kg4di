@@ -133,4 +133,12 @@ Lecture Notes in Computer Science, vol. 12507, pp. 411–429. Springer (2020).
 <img src="https://www.smarty-project.eu/wp-content/uploads/2024/04/SMARTY-Electric-blue-only-logo-no-BG-COMPLETE.png" alt="SMARTY logo" style="height:32px;vertical-align:middle;margin-right:10px;">
 This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101140087 (<a href="https://www.smarty-project.eu/" target="_blank" rel="noopener noreferrer">SMARTY</a>, Chips Joint Undertaking).
 </div>
+<div class="ack-banner">
+<img src="https://www.smart-edge.eu/wp-content/uploads/2024/03/logo-smartedge-full.png" alt="SmartEdge logo" style="height:32px;vertical-align:middle;margin-right:10px;">
+This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101092908 (<a href="https://www.smart-edge.eu/" target="_blank" rel="noopener noreferrer">SMARTY</a>).
+</div>
+<div class="ack-banner">
+<img src="https://media.licdn.com/dms/image/v2/D4D0BAQGgtwgOkUGkUQ/company-logo_200_200/B4DZvHaamzG8AI-/0/1768577149812/urban_flow_project_logo?e=2147483647&v=beta&t=kx91J13RyXSb5ofRRx-h9wuCbnviCAA6HICMPPuY6Co" alt="UrbanFlow logo" style="height:32px;vertical-align:middle;margin-right:10px;">
+This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101239472 (<a href="https://urban-flow.eu/" target="_blank" rel="noopener noreferrer">SMARTY</a>).
+</div>
 
