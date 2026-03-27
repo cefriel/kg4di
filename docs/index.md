@@ -126,34 +126,34 @@ Slides and all required materials will be made available on this page before the
 ## References
 
 [1] **Scrocca, M., Comerio, M., Carenini, A., Celino, I.**
-Turning transport data to comply with EU standards while enabling a multimodal transport knowledge graph.
+[Turning transport data to comply with EU standards while enabling a multimodal transport knowledge graph](https://arxiv.org/pdf/2011.06423).
 In: *Proceedings of the 19th International Semantic Web Conference (ISWC 2020)*.
 Lecture Notes in Computer Science, vol. 12507, pp. 411–429. Springer (2020).
-[DOI](https://doi.org/10.1007/978-3-030-62466-8_26)
+[DOI](https://doi.org/10.1007/978-3-030-62466-8_26), [arXiv](https://arxiv.org/pdf/2011.06423)
 
 [2] **Grassi, M., Scrocca, M., Carenini, A., Comerio, M., Celino, I.**
-Composable semantic data transformation pipelines with Chimera.
+[Composable semantic data transformation pipelines with Chimera](https://ceur-ws.org/Vol-3471/paper9.pdf).
 In: *Proceedings of the 4th International Workshop on Knowledge Graph Construction*, co-located with ESWC 2023.
 CEUR Workshop Proceedings, vol. 3471. CEUR (May 2023).
-[PDF](https://ceur-ws.org/Vol-3471/paper9.pdf)
+[CEUR](https://ceur-ws.org/Vol-3471/paper9.pdf)
 
 [3] **Scrocca, M., Carenini, A., Grassi, M., Comerio, M., Celino, I.**
-Not everybody speaks RDF: Knowledge conversion between different data representations.
+[Not everybody speaks RDF: Knowledge conversion between different data representations](https://ceur-ws.org/Vol-3718/paper3.pdf).
 In: *Proceedings of the 5th International Workshop on Knowledge Graph Construction*, co-located with ESWC 2024.
 CEUR Workshop Proceedings, vol. 3718. CEUR (May 2024).
-[PDF](https://ceur-ws.org/Vol-3718/paper3.pdf)
+[CEUR](https://ceur-ws.org/Vol-3718/paper3.pdf)
 
 [4] **Scrocca, M., et al.**
-Intelligent Urban Traffic Management via Semantic Interoperability Across Multiple Heterogeneous Mobility Data Sources.
+[Intelligent Urban Traffic Management via Semantic Interoperability Across Multiple Heterogeneous Mobility Data Sources](https://arxiv.org/pdf/2407.10539).
 In: *Proceedings of the 23rd International Semantic Web Conference (ISWC 2024)*.
 Springer Nature Switzerland, Cham (November 2024).
-[DOI](https://doi.org/10.1007/978-3-031-77847-6_12)
+[DOI](https://doi.org/10.1007/978-3-031-77847-6_12), [arXiv](https://arxiv.org/pdf/2407.10539)
 
 [5] **Scrocca, M., Grassi, M., Carenini, A., Anicic, D., Calbimonte, J. P., & Celino, I.**
-A DataOps Toolbox Enabling Continuous Semantic Integration of Devices for Edge‑Cloud AI Applications.
+[A DataOps Toolbox Enabling Continuous Semantic Integration of Devices for Edge‑Cloud AI Applications](https://arxiv.org/pdf/2508.02708).
 In: *Proceedings of the 24th International Semantic Web Conference (ISWC 2025)*.
 Springer Nature Switzerland, Cham (October 2025).
-[DOI](https://doi.org/10.1007/978-3-032-09530-5_22)
+[DOI](https://doi.org/10.1007/978-3-032-09530-5_22), [arXiv](https://arxiv.org/pdf/2508.02708)
 
 ---
 
