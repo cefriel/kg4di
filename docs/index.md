@@ -6,9 +6,9 @@ permalink: /
 
 ## Semantic Data Integration with Chimera
 
-This half-day tutorial introduces participants to the practical challenges of achieving data interoperability across heterogeneous sources and to the advantages of an approach based on knowledge graphs [1]. Considering a practical scenario in the mobility domain (the integration of public transport data with open knowledge from Wikidata), participants will learn how knowledge graphs can support data harmonisation and fusion.
+This half-day tutorial introduces participants to the practical challenges of achieving data interoperability across heterogeneous sources and to the advantages of an approach based on knowledge graphs [[1](https://arxiv.org/pdf/2011.06423)]. Considering a practical scenario in the mobility domain (the integration of public transport data with open knowledge from Wikidata), participants will learn how knowledge graphs can support data harmonisation and fusion.
 
-The session combines a conceptual introduction with a guided hands-on exercise using **Chimera** [2], an [open-source framework](https://github.com/cefriel/chimera) for building declarative and composable semantic data transformation pipelines. Participants will design and execute a complete data integration pipeline — from ingestion of structured data to RDF lifting, SPARQL-based enrichment and construction, and RDF lowering — using only YAML route definitions and declarative mapping templates [3]. No programming experience is required.
+The session combines a conceptual introduction with a guided hands-on exercise using **Chimera** [[2](https://ceur-ws.org/Vol-3471/paper9.pdf)], an [open-source framework](https://github.com/cefriel/chimera) for building declarative and composable semantic data transformation pipelines. Participants will design and execute a complete data integration pipeline — from ingestion of structured data to RDF lifting, SPARQL-based enrichment and construction, and RDF lowering — using only YAML route definitions and declarative mapping templates [[3](https://ceur-ws.org/Vol-3718/paper3.pdf)]. No programming experience is required.
 
 ---
 
@@ -33,7 +33,7 @@ To illustrate the pipeline stages, participants will work with a scenario involv
 
 *An interactive dashboard fed by the Chimera pipeline that will be built during the hands-on session.*
 
-This scenario is representative of a broad class of integration problems encountered in domains such as smart cities, industry 4.0, and health data management, where heterogeneous sources can be unified under a common semantic model [4,5].
+This scenario is representative of a broad class of integration problems encountered in domains such as smart cities, industry 4.0, and health data management, where heterogeneous sources can be unified under a common semantic model [[4](https://arxiv.org/pdf/2407.10539),[5](https://arxiv.org/pdf/2508.02708)].
 
 ---
 
