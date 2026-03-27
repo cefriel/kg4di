@@ -6,11 +6,9 @@ permalink: /
 
 ## Semantic Data Integration with Chimera
 
-This half-day tutorial introduces participants to **Chimera**, an open-source framework for building declarative, composable semantic data transformation pipelines on top of Apache Camel. The tutorial addresses the practical challenges of achieving data interoperability across heterogeneous sources using knowledge graphs as a unifying model.
+This half-day tutorial introduces participants to the practical challenges of achieving data interoperability across heterogeneous sources and to the advantages of an approach based on knowledge graphs. Considering a practical scenario in the mobility domain (the integration of public transport data with open knowledge from Wikidata), participants will learn how knowledge graphs can support data harmonisation and fusion.
 
-The session combines a conceptual introduction with a guided hands-on exercise. Participants will design and execute a complete data integration pipeline — from ingestion of structured data to RDF lifting, SPARQL-based enrichment and construction, and RDF lowering — using only YAML route definitions and declarative mapping templates. No application code is required.
-
-A mobility scenario (integration of public transport data with open knowledge from Wikidata) is used throughout as a running example to ground the concepts in a concrete, realistic setting.
+The session combines a conceptual introduction with a guided hands-on exercise using **Chimera**, an [open-source framework](https://github.com/cefriel/chimera) for building declarative and composable semantic data transformation pipelines. Participants will design and execute a complete data integration pipeline — from ingestion of structured data to RDF lifting, SPARQL-based enrichment and construction, and RDF lowering — using only YAML route definitions and declarative mapping templates. No programming experience is required.
 
 ---
 
@@ -21,15 +19,15 @@ By the end of this tutorial, participants will be able to:
 - Explain the **any-to-RDF-to-any** integration pattern and its role in enabling semantic interoperability
 - Configure **Apache Camel routes** augmented with Chimera components for data transformation tasks
 - Write **lifting and lowering templates** using the Mapping Template Language (MTL) to convert between arbitrary formats and RDF
-- Apply **SPARQL CONSTRUCT** queries within a pipeline to build and reshape knowledge graphs
-- Integrate external **SPARQL endpoints** (e.g. Wikidata) as enrichment sources in a declarative pipeline
-- Deploy and run a complete end-to-end pipeline using the provided Docker environment
+- Apply **semantic transformations** within a pipeline to build and reshape knowledge graphs
+- Integrate external **data sources** (e.g. Wikidata SPARQL endpoint) as enrichment sources in a declarative pipeline
+- **Deploy and run** a complete end-to-end pipeline using the provided Docker environment
 
 ---
 
 ## Running Example
 
-To illustrate the pipeline stages, participants will work with a scenario involving the integration of public transport stop data (in **GTFS** format) with geographic and descriptive information retrieved from **Wikidata**. The resulting knowledge graph is visualised on an interactive map that updates as data flows through the pipeline.
+To illustrate the pipeline stages, participants will work with a scenario involving the integration of public transport stop data (in **GTFS** format) with geographic and descriptive information retrieved from **Wikidata**. The resulting knowledge graph is visualised on an interactive online map that updates as data flows through the pipelines built by the participants.
 
 ![Interactive map showing public transport stops enriched with Wikidata landmarks](./dubrovnik.png)
 
@@ -43,8 +41,8 @@ This scenario is representative of a broad class of integration problems encount
 
 | Segment | Duration | Content |
 |---------|----------|---------|
-| **Part 1 — Data Interoperability Challenges** | 45 min | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; knowledge graphs as a unifying model |
-| **Part 2 — The Chimera Framework** | 45 min | Architecture overview; the any-to-RDF-to-any pattern; Chimera component library; Mapping Template Language (MTL) |
+| **Part 1 — Data Interoperability Challenges** | 30 min + [15 min hands-on] | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; knowledge graphs as a unifying model |
+| **Part 2 — The Chimera Framework** | 30 min + [15 min hands-on] | Architecture overview; the any-to-RDF-to-any pattern; Chimera component library; RDF Mapping Language (RML) vs Mapping Template Language (MTL) |
 | **Break** | 15 min | |
 | **Part 3 — Hands-on Session** | 1 h 30 min | Guided pipeline construction: ingestion, lifting, SPARQL enrichment, construction, lowering, and visualisation |
 
@@ -82,7 +80,6 @@ Slides and all required materials will be made available on this page before the
 - **Slides:** _To be published_
 - **Docker image & setup instructions:** _To be published_
 - **Chimera repository:** <https://github.com/cefriel/chimera>
-- **Chimera tutorial repository:** <https://github.com/cefriel/chimera-tutorial>
 
 ---
 
