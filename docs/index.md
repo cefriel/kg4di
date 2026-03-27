@@ -29,7 +29,7 @@ By the end of this tutorial, participants will be able to:
 
 To illustrate the pipeline stages, participants will work with a scenario involving the integration of public transport stop data (in **GTFS** format) with geographic and descriptive information retrieved from **Wikidata**. The resulting knowledge graph is visualised on an interactive online map that updates as data flows through the pipelines built by the participants.
 
-![Interactive map showing public transport stops enriched with Wikidata landmarks](./dubrovnik.png)
+![Interactive map showing public transport stops enriched with Wikidata landmarks](./assets/media/dubrovnik.png)
 
 *An interactive dashboard fed by the Chimera pipeline that will be built during the hands-on session.*
 
@@ -85,21 +85,41 @@ Slides and all required materials will be made available on this page before the
 
 ## Presenters
 
-### Marco Grassi
-*Knowledge Technologies Researcher, Cefriel*
-Marco Grassi's research focuses on semantic technologies and data interoperability. He is the lead developer of the Chimera framework and the principal author of its tutorial materials.
+<div class="presenter-bio">
+  <img src="./assets/media/grassi.jpg" alt="Marco Grassi" class="presenter-image">
+  <div>
+    <h3>Marco Grassi</h3>
+    <p><em>Knowledge Technologies Researcher, Cefriel</em></p>
+    <p>Marco Grassi's research focuses on semantic technologies and data interoperability. He is the lead developer of the Chimera framework and the principal author of its tutorial materials.</p>
+  </div>
+</div>
 
-### Mario Scrocca
-*Senior Knowledge Technologies Researcher, Cefriel*
-Mario Scrocca's research interests include knowledge representation, data management, and semantic interoperability, with applications in mobility and industrial domains. He is a maintainer of the Chimera framework and has co-organised tutorials on Knowledge Graph Construction at ESWC 2022 and ESWC 2024.
+<div class="presenter-bio">
+  <img src="./assets/media/scrocca.jpg" alt="Mario Scrocca" class="presenter-image">
+  <div>
+    <h3>Mario Scrocca</h3>
+    <p><em>Senior Knowledge Technologies Researcher, Cefriel</em></p>
+    <p>Mario Scrocca's research interests include knowledge representation, data management, and semantic interoperability, with applications in mobility and industrial domains. He is a maintainer of the Chimera framework and has co-organised tutorials on Knowledge Graph Construction at ESWC 2022 and ESWC 2024.</p>
+  </div>
+</div>
 
-### Alessio Carenini
-*Senior Researcher and Software Architect, Cefriel*
-Alessio Carenini has over 18 years of experience in European research projects, with a focus on the application of Semantic Web technologies to knowledge management in data-sharing ecosystems, including metadata modelling and data spaces.
+<div class="presenter-bio">
+  <img src="./assets/media/carenini.jpg" alt="Alessio Carenini" class="presenter-image">
+  <div>
+    <h3>Alessio Carenini</h3>
+    <p><em>Senior Researcher and Software Architect, Cefriel</em></p>
+    <p>Alessio Carenini has over 18 years of experience in European research projects, with a focus on the application of Semantic Web technologies to knowledge management in data-sharing ecosystems, including metadata modelling and data spaces.</p>
+  </div>
+</div>
 
-### Irene Celino
-*Research Line Manager, Cefriel*
-Irene Celino coordinates research activities at Cefriel. Her interests span knowledge graphs, semantic interoperability, human-in-the-loop AI, and the human-centric evaluation of AI systems, with over 20 years of experience in cooperative research projects.
+<div class="presenter-bio">
+  <img src="./assets/media/celino.jpg" alt="Irene Celino" class="presenter-image">
+  <div>
+    <h3>Irene Celino</h3>
+    <p><em>Research Line Manager, Cefriel</em></p>
+    <p>Irene Celino coordinates research activities at Cefriel. Her interests span knowledge graphs, semantic interoperability, human-in-the-loop AI, and the human-centric evaluation of AI systems, with over 20 years of experience in cooperative research projects.</p>
+  </div>
+</div>
 
 ---
 
@@ -135,7 +155,7 @@ This work has been partially funded by the European Union's Horizon Europe resea
 This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101092908 (<a href="https://www.smart-edge.eu/" target="_blank" rel="noopener noreferrer">SmartEdge</a>).
 </div>
 <div class="ack-banner">
-<img src="./urban_flow_project_logo.jpg" alt="UrbanFlow logo" style="height:32px;vertical-align:middle;margin-right:10px;">
+<img src="./assets/media/urban_flow_project_logo.jpg" alt="UrbanFlow logo" style="height:32px;vertical-align:middle;margin-right:10px;">
 This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101239472 (<a href="https://urban-flow.eu/" target="_blank" rel="noopener noreferrer">UrbanFlow</a>).
 </div>
 
