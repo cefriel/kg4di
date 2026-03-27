@@ -17,7 +17,7 @@ The session combines a conceptual introduction with a guided hands-on exercise u
 By the end of this tutorial, participants will be able to:
 
 - Explain the **any-to-RDF-to-any** integration pattern and its role in enabling semantic interoperability
-- Configure **Apache Camel routes** augmented with Chimera components for data transformation tasks
+- Configure **[Apache Camel](https://camel.apache.org/) routes** augmented with [Chimera](https://github.com/cefriel/chimera) components for data transformation tasks
 - Write **lifting and lowering templates** using the [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) to convert between arbitrary formats and RDF
 - Apply **semantic transformations** within a pipeline to build and reshape knowledge graphs
 - Integrate external **data sources** (e.g. Wikidata SPARQL endpoint) as enrichment sources in a declarative pipeline
@@ -27,7 +27,7 @@ By the end of this tutorial, participants will be able to:
 
 ## Running Example
 
-To illustrate the pipeline stages, participants will work with a scenario involving the integration of public transport stop data (in [**GTFS**](https://gtfs.org/) format) with geographic and descriptive information retrieved from **Wikidata**. The resulting knowledge graph is visualised on an interactive online map that updates as data flows through the pipelines built by the participants.
+To illustrate the pipeline stages, participants will work with a scenario involving the integration of public transport stop data (in [**GTFS**](https://gtfs.org/) format) with geographic and descriptive information retrieved from [**Wikidata**](https://www.wikidata.org/wiki/Wikidata:Main_Page). The resulting knowledge graph is visualised on an interactive online map that updates as data flows through the pipelines built by the participants.
 
 ![Interactive map showing public transport stops enriched with Wikidata landmarks](./assets/media/dubrovnik.png)
 
@@ -54,7 +54,7 @@ Participants will configure and run each of the following stages during the hand
 
 | Stage | Description |
 |-------|-------------|
-| **Ingest** | Read structured data files (CSV within ZIP archives) re-using the wide library of [Apache Camel](https://camel.apache.org/) components within Chimera pipelines |
+| **Ingest** | Read structured data files (CSV within ZIP archives) re-using the wide library of [Apache Camel](https://camel.apache.org/) components within [Chimera](https://github.com/cefriel/chimera) pipelines |
 | **Lift** | Convert tabular records to RDF triples using [MTL](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) lifting templates |
 | **Enrich** | Query a remote SPARQL endpoint (Wikidata) to retrieve additional structured information |
 | **Construct** | Shape the knowledge graph using SPARQL `CONSTRUCT` queries |
