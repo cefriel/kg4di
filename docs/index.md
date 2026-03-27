@@ -99,7 +99,7 @@ Slides and all required materials will be made available on this page before the
   <div>
     <h3>Mario Scrocca</h3>
     <p><b>Instructor</b> <em>Senior Knowledge Technologies Researcher, Cefriel</em></p>
-    <p>Mario Scrocca's research interests include knowledge representation, data management, and semantic interoperability, with applications in mobility and industrial domains. He is a maintainer of the Chimera framework and has co-organised tutorials on Knowledge Graph Construction at ESWC 2022 and ESWC 2024.</p>
+    <p>Mario Scrocca's research interests include knowledge representation, data management, and semantic interoperability, with applications in mobility and industrial domains. He is a maintainer of the Chimera framework and has co-organised tutorials and courses on Knowledge Graph Construction topics.</p>
   </div>
 </div>
 
