@@ -1,0 +1,51 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX tmjou: <https://w3id.org/mobility/transmodel/journeys#>
+
+#set ($prefixes = $reader.setQueryHeader("
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX tmjou: <https://w3id.org/mobility/transmodel/journeys#>
+"))
+
+#set ($positions = $reader.getDataframe("
+SELECT ?position ?featureCoord
+WHERE {
+  ?position a tmjou:ScheduledStopPoint ;
+              geo:hasGeometry [ geo:asWKT ?featureCoord ] .
+}
+ORDER BY ?position
+LIMIT 10
+"))
+
+CONSTRUCT {
+  ?place a wd:Q618123 ;
+         rdfs:label ?placeLabel ;
+         wdt:P625 ?coord ;
+         schema:image ?image ;
+	 geo:hasGeometry [ geo:asWKT ?coord ] .
+}
+WHERE {
+
+  #foreach($position in $positions)
+    {
+      SERVICE wikibase:around {
+        ?place wdt:P625 ?coord .
+        bd:serviceParam wikibase:center "$position.featureCoord"^^geo:wktLiteral .
+        bd:serviceParam wikibase:radius "0.5" .
+      }
+    }#if($foreach.hasNext) UNION #end
+  #end
+
+  OPTIONAL { ?place wdt:P18 ?image . }
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en".
+  }
+}
+LIMIT 25

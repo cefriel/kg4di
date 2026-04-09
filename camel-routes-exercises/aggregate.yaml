@@ -1,0 +1,35 @@
+- beans:
+    - name: lowering
+      type: com.cefriel.util.ChimeraResourceBean
+      properties:
+        url: "file://./mappings/lowering.vm"
+        serializationFormat: "vtl"
+
+- route:
+    from:
+      uri: "direct:aggregate"
+      steps:
+        - aggregate:
+            aggregationStrategy: "#class:com.cefriel.component.GraphAggregation"
+            correlationExpression:
+              constant: true
+            completionSize: 2
+        - log:
+            message: "completed graph aggregation"
+        # perform lowering
+        - [ ... ]
+        - log:
+            message: "performed lowering"
+        - setHeader:
+            name: Content-Type
+            constant: text/csv
+        - setHeader:
+            name: Authorization
+            constant: Bearer tutorial-kg4di
+        - log:
+            message: "sending result to visualization..."
+        # send result to viz
+        - [ ... ]
+        - log:
+            message: "\n backend response: ${body}\n"
+

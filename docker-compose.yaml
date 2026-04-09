@@ -1,0 +1,10 @@
+services:
+  chimera:
+    image: cefriel/chimera:kg4di
+    volumes:
+      - ./camel-routes:/app/camel-routes
+      - ./input-gtfs:/app/input-gtfs
+  dashboard:
+    image: cefriel/chimera:kg4di-dashboard
+    ports:
+      - "8000:8000"

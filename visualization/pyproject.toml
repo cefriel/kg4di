@@ -1,0 +1,11 @@
+[project]
+name = "kg4di-visualization"
+version = "0.1.0"
+description = "Map visualization backend for kg4di"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "chardet>=5.0.0",
+]
+

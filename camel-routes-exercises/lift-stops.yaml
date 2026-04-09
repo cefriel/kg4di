@@ -1,0 +1,34 @@
+- beans:
+    # define ChimeraResourceBean for lifting MTL mapping
+    - [ ... ]
+
+- route:
+    from:
+      uri: "file:input-gtfs"
+      parameters:
+        antInclude: "*.zip"
+        noop: true
+      steps:
+        - unmarshal:
+            zipFile:
+              usingIterator: true
+        - split:
+            simple: "${body}"
+            steps:
+              - choice:
+                  when:
+                    - simple: "${header.CamelFileName} == 'stops.txt'"
+                      steps:
+                        - convertBodyTo:
+                            type: "java.lang.String"
+                        # perform lifting
+                        - [ ... ]
+                        # load rdf into in memory graph
+                        - [ ... ]
+                        - multicast:
+                            steps:
+                              - to:
+                                  uri: "direct:construct"
+                              - to:
+                                  uri: "direct:aggregate"
+
