@@ -15,7 +15,7 @@ $btn-border-color: rgba(255,255,255,0.3);
 
 .page-header {
   position: relative;
-  background-image: url("{{ site.baseurl }}/unsplash-theme.jpg");
+  background-image: url("{{ site.baseurl }}/assets/media/unsplash-theme.jpg");
   background-size: cover;
   background-position: center;
   background-color: #0a3c82;
@@ -81,5 +81,29 @@ $btn-border-color: rgba(255,255,255,0.3);
   font-size: 0.88rem;
   color: #1a2a4a;
   line-height: 1.5;
+}
+
+// Presenter bio with circular image
+.presenter-bio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.presenter-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
