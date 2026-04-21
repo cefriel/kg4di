@@ -9,3 +9,4 @@ vendor/
 /camel-routes-solved/
 /camel-routes/
 /visualization/.dockerignore
+**/.camel-jbang

@@ -4,15 +4,10 @@
       properties:
         url: "file://./lifting.vm"
         serializationFormat: "vtl"
-    - name: triples
-      type: com.cefriel.util.ChimeraResourceBean
-      properties:
-        url: "file://./complete-kg.ttl"
-        serializationFormat: "turtle"
 
 - route:
     from:
-      uri: "file://./"
+      uri: "file://inbox"
       parameters:
         fileName: stops.txt
         noop: true
@@ -20,14 +15,14 @@
         - convertBodyTo:
             type: "java.lang.String"
         - log:
-            message: "\n E1 lifting result: ${body}\n"
+            message: "\n E1 lifting input: ${body}\n"
         - to:
             uri: "mapt://csv"
             parameters:
               template: '#bean:lifting'
               format: "turtle"
-              basePath: "./"
-              filename: "e1-lifting.ttl"
+              basePath: "outbox"
+              filename: "e1-output.ttl"
         - log:
             message: "\n E1 lifting result: ${body}\n"
 
