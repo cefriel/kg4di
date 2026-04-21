@@ -1,0 +1,31 @@
+- beans:
+    - name: lowering
+      type: com.cefriel.util.ChimeraResourceBean
+      properties:
+        url: "file://./lowering.vm"
+        serializationFormat: "vtl"
+    - name: triples
+      type: com.cefriel.util.ChimeraResourceBean
+      properties:
+        url: "file://./complete-kg.ttl"
+        serializationFormat: "turtle"
+
+- route:
+    from:
+      uri: "graph://get"
+      parameters:
+        defaultGraph: true
+      steps:
+        - to:
+            uri: "graph://add"
+            parameters:
+              chimeraResource: '#bean:triples'
+        - to:
+            uri: "mapt://rdf"
+            parameters:
+              template: '#bean:lowering'
+              basePath: "./"
+              filename: "e2-lowering"
+        - log:
+            message: "\n E2 lowering result: ${body}\n"
+

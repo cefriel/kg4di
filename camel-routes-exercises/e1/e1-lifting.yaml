@@ -1,0 +1,33 @@
+- beans:
+    - name: lifting
+      type: com.cefriel.util.ChimeraResourceBean
+      properties:
+        url: "file://./lifting.vm"
+        serializationFormat: "vtl"
+    - name: triples
+      type: com.cefriel.util.ChimeraResourceBean
+      properties:
+        url: "file://./complete-kg.ttl"
+        serializationFormat: "turtle"
+
+- route:
+    from:
+      uri: "file://./"
+      parameters:
+        fileName: stops.txt
+        noop: true
+      steps:
+        - convertBodyTo:
+            type: "java.lang.String"
+        - log:
+            message: "\n E1 lifting result: ${body}\n"
+        - to:
+            uri: "mapt://csv"
+            parameters:
+              template: '#bean:lifting'
+              format: "turtle"
+              basePath: "./"
+              filename: "e1-lifting.ttl"
+        - log:
+            message: "\n E1 lifting result: ${body}\n"
+

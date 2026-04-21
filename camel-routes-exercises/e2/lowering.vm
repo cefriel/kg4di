@@ -1,0 +1,5 @@
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX kg4di: <https://cefriel.github.io/kg4di#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX tmjou: <https://w3id.org/mobility/transmodel/journeys#>
