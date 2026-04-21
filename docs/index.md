@@ -43,7 +43,7 @@ This scenario is representative of a broad class of integration problems encount
 |---------|----------|---------|
 | **Part 1 — Data Interoperability Challenges** | 30 min + [15 min hands-on] | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; knowledge graphs as a unifying model |
 | **Part 2 — The Chimera Framework** | 30 min + [15 min hands-on] | Architecture overview; the any-to-RDF-to-any pattern; [Chimera](https://github.com/cefriel/chimera) framework and components; [RDF Mapping Language (RML)](https://w3id.org/rml/portal) vs [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) |
-| **Break** | 15 min | |
+| **Break** | 30 min | |
 | **Part 3 — Hands-on Session** | 1 h 30 min | Guided pipeline construction: ingestion, lifting, SPARQL enrichment, construction, lowering, and visualisation |
 
 ---
