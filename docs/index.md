@@ -4,7 +4,7 @@ title: "Knowledge Graphs for Data Interoperability with Chimera (KG4DI)"
 permalink: /
 ---
 
-## Semantic Data Integration with Chimera
+## Overview
 
 This half-day tutorial introduces participants to the practical challenges of achieving data interoperability across heterogeneous sources and to the advantages of an approach based on knowledge graphs [[1](https://arxiv.org/pdf/2011.06423)]. Considering a practical scenario in the mobility domain (the integration of public transport data with open knowledge from Wikidata), participants will learn how knowledge graphs can support data harmonisation and fusion.
 
