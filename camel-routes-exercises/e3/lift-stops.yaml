@@ -4,7 +4,7 @@
 
 - route:
     from:
-      uri: "file:input-gtfs"
+      uri: "file:inbox"
       parameters:
         antInclude: "*.zip"
         noop: true
@@ -23,8 +23,10 @@
                             type: "java.lang.String"
                         # perform lifting
                         - [ ... ]
-                        # load rdf into in memory graph
+                        # load rdf into Chimera RDF memory graph
                         - [ ... ]
+                        - log:
+                            message: "\n E1 lifting result: ${body}\n"
                         - multicast:
                             steps:
                               - to:
