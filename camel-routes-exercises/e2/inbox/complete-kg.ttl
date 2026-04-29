@@ -1,122 +1,129 @@
-<https://cefriel.github.io/kg4di#STAGECOACH> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.751677 36.915682)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-<http://www.w3.org/2000/01/rdf-schema#label> "Stagecoach Hotel & Casino (Demo)" .
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX kg4di: <https://cefriel.github.io/kg4di#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX tmjou: <https://w3id.org/mobility/transmodel/journeys#>
+PREFIX wd: <http://www.wikidata.org/entity>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX schema: <http://schema.org/>
+PREFIX wmf: <http://commons.wikimedia.org/wiki/Special:FilePath/>
 
-<http://www.wikidata.org/entity/Q49680069> a <http://www.wikidata.org/entity/Q618123>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Azrael Ridge"@en;
-  <http://www.wikidata.org/prop/direct/P625> "Point(-116.400277777 36.643888888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.400277777 36.643888888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ] .
+kg4di:STAGECOACH a geo:Feature,
+    tmjou:ScheduledStopPoint;
+geo:hasGeometry [
+    geo:asWKT "Point(-116.751677 36.915682)"^^geo:wktLiteral ];
+rdfs:label "Stagecoach Hotel & Casino (Demo)" .
 
-<http://www.wikidata.org/entity/Q69525622> a <http://www.wikidata.org/entity/Q618123>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Beatty Library District"@en;
-  <http://www.wikidata.org/prop/direct/P625> "Point(-116.763487 36.90843)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.763487 36.90843)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ] .
+wd:Q49680069 a wd:Q618123;
+    rdfs:label "Azrael Ridge"@en;
+    wdt:P625 "Point(-116.400277777 36.643888888)"^^geo:wktLiteral;
+    geo:hasGeometry [ geo:asWKT "Point(-116.400277777 36.643888888)"^^geo:wktLiteral ] .
 
-<http://www.wikidata.org/entity/Q7074433> a <http://www.wikidata.org/entity/Q618123>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Oasis Valley"@en;
-  <http://www.wikidata.org/prop/direct/P625> "Point(-116.759166666 36.916666666)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.759166666 36.916666666)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ] .
+wd:Q69525622 a wd:Q618123;
+    rdfs:label "Beatty Library District"@en;
+    wdt:P625 "Point(-116.763487 36.90843)"^^geo:wktLiteral;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.763487 36.90843)"^^geo:wktLiteral
+        ] .
 
-<http://www.wikidata.org/entity/Q6335627> a <http://www.wikidata.org/entity/Q618123>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "KPKK"@en;
-  <http://www.wikidata.org/prop/direct/P625> "Point(-116.398 36.6425)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.398 36.6425)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ] .
+wd:Q7074433 a wd:Q618123;
+    rdfs:label "Oasis Valley"@en;
+    wdt:P625 "Point(-116.759166666 36.916666666)"^^geo:wktLiteral;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.759166666 36.916666666)"^^geo:wktLiteral
+        ] .
 
-<http://www.wikidata.org/entity/Q6337387> a <http://www.wikidata.org/entity/Q618123>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "KRZQ"@en;
-  <http://www.wikidata.org/prop/direct/P625> "Point(-116.399 36.642333333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.399 36.642333333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ] .
+wd:Q6335627 a wd:Q618123;
+    rdfs:label "KPKK"@en;
+    wdt:P625 "Point(-116.398 36.6425)"^^geo:wktLiteral;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.398 36.6425)"^^geo:wktLiteral
+        ] .
 
-<http://www.wikidata.org/entity/Q107463187> a <http://www.wikidata.org/entity/Q618123>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Beatty Museum"@en;
-  <http://www.wikidata.org/prop/direct/P625> "Point(-116.759 36.915)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.759 36.915)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ] .
+wd:Q6337387 a wd:Q618123;
+    rdfs:label "KRZQ"@en;
+    wdt:P625 "Point(-116.399 36.642333333)"^^geo:wktLiteral;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.399 36.642333333)"^^geo:wktLiteral
+        ] .
 
-<http://www.wikidata.org/entity/Q455066> a <http://www.wikidata.org/entity/Q618123>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Amargosa Valley"@en;
-  <http://www.wikidata.org/prop/direct/P625> "Point(-116.400277777 36.643888888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>;
-  <http://schema.org/image> <http://commons.wikimedia.org/wiki/Special:FilePath/Big%20Dune%2C%20Amargosa%20Valley.jpg>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.400277777 36.643888888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ] .
+wd:Q107463187 a wd:Q618123;
+    rdfs:label "Beatty Museum"@en;
+    wdt:P625 "Point(-116.759 36.915)"^^geo:wktLiteral;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.759 36.915)"^^geo:wktLiteral
+        ] .
 
-<http://www.wikidata.org/entity/Q100269250> a <http://www.wikidata.org/entity/Q618123>;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Beatty Museum"@en;
-  <http://www.wikidata.org/prop/direct/P625> "Point(-116.761497 36.905906)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>;
-  <http://schema.org/image> <http://commons.wikimedia.org/wiki/Special:FilePath/Beatty%20NV%20Museum.jpg>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.761497 36.905906)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ] .
+wd:Q455066 a wd:Q618123;
+    rdfs:label "Amargosa Valley"@en;
+    wdt:P625 "Point(-116.400277777 36.643888888)"^^geo:wktLiteral;
+    schema:image wmf:Big%20Dune%2C%20Amargosa%20Valley.jpg;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.400277777 36.643888888)"^^geo:wktLiteral
+        ] .
 
-<https://cefriel.github.io/kg4di#AMV> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.40094 36.641496)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-  <http://www.w3.org/2000/01/rdf-schema#label> "Amargosa Valley (Demo)" .
+wd:Q100269250 a wd:Q618123;
+    rdfs:label "Beatty Museum"@en;
+    wdt:P625 "Point(-116.761497 36.905906)"^^geo:wktLiteral;
+    schema:image wmf:Beatty%20NV%20Museum.jpg;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.761497 36.905906)"^^geo:wktLiteral
+        ] .
 
-<https://cefriel.github.io/kg4di#BEATTY_AIRPORT> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.784582 36.868446)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-  <http://www.w3.org/2000/01/rdf-schema#label> "Nye County Airport (Demo)" .
+kg4di:AMV a geo:Feature,
+        tmjou:ScheduledStopPoint;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.40094 36.641496)"^^geo:wktLiteral
+        ];
+    rdfs:label "Amargosa Valley (Demo)" .
 
-<https://cefriel.github.io/kg4di#BULLFROG> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.81797 36.88108)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-  <http://www.w3.org/2000/01/rdf-schema#label> "Bullfrog (Demo)" .
+kg4di:BEATTY_AIRPORT a geo:Feature,
+        tmjou:ScheduledStopPoint;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.784582 36.868446)"^^geo:wktLiteral
+        ];
+    rdfs:label "Nye County Airport (Demo)" .
 
-<https://cefriel.github.io/kg4di#DADAN> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.768242 36.909489)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-  <http://www.w3.org/2000/01/rdf-schema#label> "Doing Ave / D Ave N (Demo)" .
+kg4di:BULLFROG a geo:Feature,
+        tmjou:ScheduledStopPoint;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.81797 36.88108)"^^geo:wktLiteral
+        ];
+    rdfs:label "Bullfrog (Demo)" .
 
-<https://cefriel.github.io/kg4di#EMSI> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.76218 36.905697)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-  <http://www.w3.org/2000/01/rdf-schema#label> "E Main St / S Irving St (Demo)" .
+kg4di:DADAN a geo:Feature,
+        tmjou:ScheduledStopPoint;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.768242 36.909489)"^^geo:wktLiteral
+        ];
+    rdfs:label "Doing Ave / D Ave N (Demo)" .
 
-<https://cefriel.github.io/kg4di#FUR_CREEK_RES> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-117.133162 36.425288)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-  <http://www.w3.org/2000/01/rdf-schema#label> "Furnace Creek Resort (Demo)" .
+kg4di:EMSI a geo:Feature,
+        tmjou:ScheduledStopPoint;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.76218 36.905697)"^^geo:wktLiteral
+        ];
+    rdfs:label "E Main St / S Irving St (Demo)" .
 
-<https://cefriel.github.io/kg4di#NADAV> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.76821 36.914893)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-  <http://www.w3.org/2000/01/rdf-schema#label> "North Ave / D Ave N (Demo)" .
+kg4di:FUR_CREEK_RES a geo:Feature,
+        tmjou:ScheduledStopPoint;
+    geo:hasGeometry [
+        geo:asWKT "Point(-117.133162 36.425288)"^^geo:wktLiteral
+        ];
+    rdfs:label "Furnace Creek Resort (Demo)" .
 
-<https://cefriel.github.io/kg4di#NANAA> a <http://www.opengis.net/ont/geosparql#Feature>,
-    <https://w3id.org/mobility/transmodel/journeys#ScheduledStopPoint>;
-  <http://www.opengis.net/ont/geosparql#hasGeometry> [
-      <http://www.opengis.net/ont/geosparql#asWKT> "Point(-116.761472 36.914944)"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
-    ];
-  <http://www.w3.org/2000/01/rdf-schema#label> "North Ave / N A Ave (Demo)" .
+kg4di:NADAV a geo:Feature,
+        tmjou:ScheduledStopPoint;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.76821 36.914893)"^^geo:wktLiteral
+        ];
+    rdfs:label "North Ave / D Ave N (Demo)" .
+
+kg4di:NANAA a geo:Feature,
+        tmjou:ScheduledStopPoint;
+    geo:hasGeometry [
+        geo:asWKT "Point(-116.761472 36.914944)"^^geo:wktLiteral
+        ];
+    rdfs:label "North Ave / N A Ave (Demo)" .
 
 
