@@ -4,7 +4,7 @@ title: "Knowledge Graphs for Data Interoperability with Chimera (KG4DI)"
 permalink: /
 ---
 
-## Semantic Data Integration with Chimera
+## Overview
 
 This half-day tutorial introduces participants to the practical challenges of achieving data interoperability across heterogeneous sources and to the advantages of an approach based on knowledge graphs [[1](https://arxiv.org/pdf/2011.06423)]. Considering a practical scenario in the mobility domain (the integration of public transport data with open knowledge from Wikidata), participants will learn how knowledge graphs can support data harmonisation and fusion.
 
@@ -41,10 +41,11 @@ This scenario is representative of a broad class of integration problems encount
 
 | Segment | Duration | Content |
 |---------|----------|---------|
-| **Part 1 — Data Interoperability Challenges** | 30 min + [15 min hands-on] | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; knowledge graphs as a unifying model |
-| **Part 2 — The Chimera Framework** | 30 min + [15 min hands-on] | Architecture overview; the any-to-RDF-to-any pattern; [Chimera](https://github.com/cefriel/chimera) framework and components; [RDF Mapping Language (RML)](https://w3id.org/rml/portal) vs [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) |
+| **Introduction** | 15 min | Motivation, objectives and practical information |
+| **Part 1 — Data Interoperability Challenges** | 20 min + [5 min] | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; knowledge graphs as a unifying model + [presentation of the tutorial use case] |
+| **Part 2 — Mapping Approaches** | 20 min + [30 min] | State of the art; the any-to-RDF-to-any pattern; [Chimera](https://github.com/cefriel/chimera) framework and components; [RDF Mapping Language (RML)](https://w3id.org/rml/portal) vs [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) + [exercises for lifting/lowering mapping rules] |
 | **Break** | 30 min | |
-| **Part 3 — Hands-on Session** | 1 h 30 min | Guided pipeline construction: ingestion, lifting, SPARQL enrichment, construction, lowering, and visualisation |
+| **Part 3 — Chimera Framework** | 30 min + [1 hour] | Architecture overview; Main Chimera concepts and related components + [guided pipeline construction for the tutorial use case: ingestion, lifting, SPARQL enrichment, construction, lowering, and visualisation] |
 
 ---
 
