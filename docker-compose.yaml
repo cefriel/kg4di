@@ -1,6 +1,9 @@
 services:
   chimera:
     image: cefriel/chimera:kg4di
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./camel-routes:/app/camel-routes
       - ./input-gtfs:/app/input-gtfs
