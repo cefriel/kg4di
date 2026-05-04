@@ -1,0 +1,38 @@
+#set ( $prefixes = $reader.setQueryHeader("
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX tmjou: <https://w3id.org/mobility/transmodel/journeys#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+"))
+ 
+#set ($stops = $reader.getDataframe("
+SELECT ?coord ?label ?type ?image
+WHERE {
+  ?s a tmjou:ScheduledStopPoint ;
+     rdfs:label ?label .
+ 
+  OPTIONAL { ?s schema:image ?image . }
+  OPTIONAL { ?s geo:hasGeometry [ geo:asWKT ?coord ] . }
+}
+"))
+ 
+#set ($landmarks = $reader.getDataframe("
+SELECT ?coord ?label ?type ?image
+WHERE {
+  ?s a wd:Q618123 ;
+     rdfs:label ?label .
+ 
+  OPTIONAL { ?s schema:image ?image . }
+  OPTIONAL { ?s geo:hasGeometry [ geo:asWKT ?coord ] . }
+}
+"))
+ 
+lat,lon,label,type,image
+#foreach ($stop in $stops)
+$functions.getLat($stop.coord),$functions.getLong($stop.coord),$stop.label,stop,
+#end
+#foreach ($landmark in $landmarks)
+#set($rowimage = "#if($landmark.image)$landmark.image#{else}""#end")
+$functions.getLat($landmark.coord),$functions.getLong($landmark.coord),$landmark.label,landmark,$rowimage
+#end

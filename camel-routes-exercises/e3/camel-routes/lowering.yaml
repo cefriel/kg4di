@@ -7,17 +7,14 @@
 
 - route:
     from:
-      uri: "direct:aggregate"
+      uri: "direct:lowering"
       steps:
-        - aggregate:
-            aggregationStrategy: "#class:com.cefriel.component.GraphAggregation"
-            correlationExpression:
-              constant: true
-            completionSize: 2
-        - log:
-            message: "completed graph aggregation"
         # perform lowering
-        - [ ... ]
+        - to:
+            uri: "mapt://rdf"
+            parameters:
+              template: '#bean:lowering'
+              customFunctions: "#class:com.cefriel.tutorial.GeoFunctions"
         - log:
             message: "performed lowering"
         - setHeader:
@@ -28,8 +25,8 @@
             constant: Bearer tutorial-kg4di
         - log:
             message: "sending result to visualization..."
-        # send result to viz
-        - [ ... ]
+        # TODO: Send result to viz using HTTP POST via HTTP component
+        - [...]
         - log:
             message: "\n backend response: ${body}\n"
 
