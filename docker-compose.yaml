@@ -1,11 +1,8 @@
 services:
   chimera:
     image: cefriel/chimera:kg4di
-    build:
-      context: .
-      dockerfile: Dockerfile
     volumes:
-      - ./camel-routes-solved/e3:/app
+      - ./camel-routes-exercises/e2:/app
   dashboard:
     image: cefriel/chimera:kg4di-dashboard
     ports:
