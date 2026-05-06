@@ -16,4 +16,5 @@ WHERE {
 }
 "))
 
+## The following csv needs to be populated with the data in each row of the $stops dataframe
 stop_id,route,latitude,longitude
