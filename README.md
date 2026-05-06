@@ -25,6 +25,7 @@ The running example integrates public transport stop data ([GTFS](https://gtfs.o
 ### Alternative (local execution)
 
 - [JBang](https://www.jbang.dev/) — allows running Chimera pipelines directly on your machine.
+  - Install [JBang](https://www.jbang.dev/download/) before proceeding (first time only).
   - Install Apache Camel via JBang (first time only):
     ```bash
     jbang app install camel@apache/camel

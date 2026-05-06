@@ -1,0 +1,32 @@
+- beans:
+    - name: lowering
+      type: com.cefriel.util.ChimeraResourceBean
+      properties:
+        url: "file://./lowering.vm"
+        serializationFormat: "vtl"
+
+- route:
+    from:
+      uri: "file://inbox"
+      parameters:
+        fileName: complete-kg.ttl
+        noop: true
+      steps:
+        - convertBodyTo:
+            type: "java.lang.String"
+        - log:
+            message: "\n E1 lowering input: ${body}\n"
+        - to:
+            uri: "graph://get"
+            parameters:
+              rdfFormat: "turtle"
+              defaultGraph: true
+        - to:
+            uri: "mapt://rdf"
+            parameters:
+              template: '#bean:lowering'
+              basePath: "outbox"
+              filename: "e2-output.csv"
+        - log:
+            message: "\n E1 lowering result: ${body}\n"
+
