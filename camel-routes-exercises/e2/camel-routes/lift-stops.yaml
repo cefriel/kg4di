@@ -1,0 +1,38 @@
+- beans:
+    # TODO: Define ChimeraResourceBean for lifting MTL mapping
+    [...]
+
+- route:
+    from:
+      uri: "file:inbox"
+      parameters:
+        antInclude: "*.zip"
+        noop: true
+      steps:
+        - unmarshal:
+            zipFile:
+              usingIterator: true
+        - split:
+            simple: "${body}"
+            steps:
+              - choice:
+                  when:
+                    - simple: "${header.CamelFileName} == 'stops.txt'"
+                      steps:
+                        - convertBodyTo:
+                            type: "java.lang.String"
+                        # TODO: Perform lifting
+                        [...]
+                        # Load rdf into Chimera RDF memory graph
+                        - to:
+                            uri: "graph://get"
+                            parameters:
+                              rdfFormat: "turtle"
+                        - log:
+                            message: "\n E1 lifting result: ${body}\n"
+                        - enrich:
+                            simple: "direct:construct"
+                            aggregationStrategy: "#class:com.cefriel.component.GraphAggregation"
+                        - to:
+                            uri: "direct:lowering"
+

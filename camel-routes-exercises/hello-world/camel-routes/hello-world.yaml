@@ -1,0 +1,9 @@
+- route:
+    id: "hello-world-route"
+    from:
+        uri: "timer:hello?period=5000"
+        steps:
+            - setBody:
+                constant: "Hello, World!"
+            - log:
+                message: "${body}"

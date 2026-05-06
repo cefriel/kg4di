@@ -1,4 +1,17 @@
-# Running Exercise 1
+# Exercise 1 - Lowering
+
+We want to lower the RDF KG contained in [./inbox/e1-input.ttl](./inbox/e1-input.ttl) to the CSV representation in file [./outbox/e1-output.csv](./outbox/e1-output.csv).
+
+To do this, edit and complete the MTL mapping in [./lowering.vm](./lowering.vm).
+
+# How to run the mapping
+
+## Using Docker Compose
+
+```bash
+cd camel-routes-exercises/e1
+docker compose up
+```
 
 ## Docker Command
 

@@ -1,0 +1,5 @@
+stop_id,route,latitude,longitude
+http://airport.example.com/1847,12,51.219447,4.402464
+http://airport.example.com/6523,25,50.901389,4.484444
+http://airport.example.com/9031,7,50.850346,4.351721
+http://airport.example.com/7712,18,51.054342,3.717424

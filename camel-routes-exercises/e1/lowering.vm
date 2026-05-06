@@ -1,0 +1,20 @@
+#set ( $prefixes = $reader.setQueryHeader("
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX transit: <http://vocab.org/transit/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ex: <http://airport.example.com/>
+"))
+
+#set ($stops = $reader.getDataframe("
+SELECT ?stop ?route ?lat ?long
+WHERE {
+    ?stop  rdf:type transit:Stop ;
+            transit:route ?route ;
+            wgs84_pos:lat ?lat ;
+            wgs84_pos:long ?long .
+}
+"))
+
+## The following csv needs to be populated with the data in each row of the $stops dataframe
+stop_id,route,latitude,longitude

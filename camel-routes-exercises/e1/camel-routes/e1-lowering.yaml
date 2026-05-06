@@ -15,7 +15,7 @@
         - convertBodyTo:
             type: "java.lang.String"
         - log:
-            message: "\n E2 lowering input: ${body}\n"
+            message: "\n E1 lowering input: ${body}\n"
         - to:
             uri: "graph://get"
             parameters:
@@ -28,5 +28,5 @@
               basePath: "outbox"
               filename: "e2-output.csv"
         - log:
-            message: "\n E2 lowering result: ${body}\n"
+            message: "\n E1 lowering result: ${body}\n"
 

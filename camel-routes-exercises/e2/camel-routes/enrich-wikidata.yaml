@@ -1,0 +1,27 @@
+- beans:
+    - name: constructTemplate
+      type: com.cefriel.util.ChimeraResourceBean
+      properties:
+        url: "file://./mappings/construct.vm"
+        serializationFormat: "vtl"
+    - name: wikidataQuery
+      type: com.cefriel.util.ChimeraResourceBean
+      properties:
+        url: "file://./wikidata-construct.sparql"
+        serializationFormat: "sparql"
+
+- route:
+    from:
+      uri: "direct:construct"
+      steps:
+        # generate construct query
+        - to:
+            uri: "mapt://rdf"
+            parameters:
+              template: "#bean:constructTemplate"
+              filename: "wikidata-construct.sparql"
+        # get RDFGraph of type SPARQLEndpoint for Wikidata
+        - pollEnrich:
+            constant: "graph://get?sparqlEndpoint=https://query.wikidata.org/sparql"
+        # TODO: Run construct query
+        [...]

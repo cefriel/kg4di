@@ -1,8 +1,0 @@
-#set ( $prefixes = $reader.setQueryHeader("
-PREFIX geo: <http://www.opengis.net/ont/geosparql#>
-PREFIX tmjou: <https://w3id.org/mobility/transmodel/journeys#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX schema: <http://schema.org/>
-"))
-position,label,type,image

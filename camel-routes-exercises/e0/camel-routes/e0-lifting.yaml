@@ -15,7 +15,7 @@
         - convertBodyTo:
             type: "java.lang.String"
         - log:
-            message: "\n E1 lifting input: ${body}\n"
+            message: "\n E0 lifting input: ${body}\n"
         - to:
             uri: "mapt://csv"
             parameters:
@@ -24,5 +24,5 @@
               basePath: "outbox"
               filename: "e1-output.ttl"
         - log:
-            message: "\n E1 lifting result: ${body}\n"
+            message: "\n E0 lifting result: ${body}\n"
 
