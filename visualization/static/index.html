@@ -82,6 +82,12 @@
 
 
 
+        // Derive base path so the app works both at / and behind a sub-path
+        // proxy (e.g. /kg4di/).  window.location.pathname for the root page
+        // is either "/" or "/kg4di/", so strip the trailing slash to get ""
+        // or "/kg4di" as the prefix for every API call.
+        const BASE = window.location.pathname.replace(/\/$/, '');
+
         const API_TOKEN = 'tutorial-kg4di';
         let displayedCount = 0;
         let stopCount = 0;
@@ -102,7 +108,7 @@
 
         async function checkForNewLocations() {
             try {
-                const response = await fetch(`/api/locations?since=${displayedCount}`, {
+                const response = await fetch(`${BASE}/api/locations?since=${displayedCount}`, {
                     headers: { 'Authorization': `Bearer ${API_TOKEN}` }
                 });
                 const data = await response.json();
