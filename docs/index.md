@@ -79,7 +79,7 @@ Participants are expected to have:
 Slides and all required materials will be made available on this page before the start of the conference.
 
 - **Slides:** _To be published_
-- **Docker image & setup instructions:** _To be published_
+- **Docker image & setup instructions:** [Instructions available here](https://github.com/cefriel/kg4di#prerequisites.) The setup can be tested by trying to run this [test exercise](https://github.com/cefriel/kg4di#hello-world)
 - **Chimera repository:** <https://github.com/cefriel/chimera>
 
 ---
