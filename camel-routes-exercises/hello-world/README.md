@@ -1,5 +1,12 @@
 # Running Hello World
 
+## Using Docker Compose
+
+```bash
+cd camel-routes-exercises/e2
+docker compose up
+```
+
 ## Docker Command
 
 ```bash
