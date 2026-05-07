@@ -2,7 +2,7 @@
 
 This exercise is divided into three sequential stages:
 
-# 1. Lifting GTFS Data (`lift-stops.yaml` route)
+# 1. Lifting GTFS Data (`lifting.yaml` route)
 
 ### Overview
 
@@ -79,13 +79,14 @@ Documentation:
 
 * The processed data is transmitted to the visualization system for display.
 
-### Running Exercise 3
+### Running Exercise 2
 
 ## Using Docker Compose
 
 ```bash
 cd camel-routes-exercises/e2
 docker compose up
+docker compose down
 ```
 
 ## Docker Command
@@ -93,6 +94,7 @@ docker compose up
 ```bash
 # from root directory
 docker run -v ./camel-routes-exercises/e2:/app cefriel/chimera:kg4di
+# container must be explicitly killed with command [docker kill <container_id_or_name>]
 ```
 
 
@@ -103,3 +105,12 @@ cd camel-routes-exercises/e2
 jbang --java-options="-Dhttp.agent=MyCustomAgent/1.0" camel@apache/camel run camel-routes/*.yaml --dep=mvn:com.cefriel:camel-chimera-mapping-template:4.6.0 ../functions/GeoFunctions.java
 ```
 
+### Local Deployment
+
+If you want to experiment with the exercise after the tutorial, you can use the complete docker-compose file to execute also the web app. In the pipeline, you have to set the HTTP request to `http://dashboard:8000/api/location`.
+
+```bash
+cd camel-routes-exercises/e2
+docker compose -f docker-compose-with-dashboard.yaml up
+docker compose -f docker-compose-with-dashboard.yaml down
+```

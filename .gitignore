@@ -10,3 +10,4 @@ vendor/
 /camel-routes/
 /visualization/.dockerignore
 **/.camel-jbang
+**/wikidata-construct.sparql

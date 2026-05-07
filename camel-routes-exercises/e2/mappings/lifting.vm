@@ -7,8 +7,8 @@ PREFIX tmjou: <https://w3id.org/mobility/transmodel/journeys#>
 #set ($stops = $reader.getDataframe())
  
 #foreach ($stop in $stops)
- kg4di:$stop.stop_id rdf:type geo:Feature ;
-		  rdf:type tmjou:ScheduledStopPoint ;
-		  rdfs:label "$stop.stop_name" ;
-		  geo:hasGeometry [ geo:asWKT "Point($stop.stop_lon $stop.stop_lat)"^^geo:wktLiteral ] .
+kg4di:$stop.stop_id rdf:type geo:Feature ;
+	rdf:type tmjou:ScheduledStopPoint ;
+	rdfs:label "$stop.stop_name" ;
+	geo:hasGeometry [ geo:asWKT "Point($stop.stop_lon $stop.stop_lat)"^^geo:wktLiteral ] .
 #end

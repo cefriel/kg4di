@@ -1,0 +1,11 @@
+services:
+  chimera:
+    image: cefriel/chimera:kg4di
+    volumes:
+      - ./:/app
+    depends_on:
+      - dashboard
+  dashboard:
+    image: cefriel/chimera:kg4di-dashboard
+    ports:
+      - "8000:8000"
