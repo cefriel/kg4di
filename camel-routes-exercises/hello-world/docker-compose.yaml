@@ -4,4 +4,4 @@ services:
   chimera:
     image: cefriel/chimera:kg4di
     volumes:
-      - ./camel-routes-exercises/hello-world:/app
+      - ./hello-world:/app

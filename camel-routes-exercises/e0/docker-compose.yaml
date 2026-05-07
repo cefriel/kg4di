@@ -4,4 +4,4 @@ services:
   chimera:
     image: cefriel/chimera:kg4di
     volumes:
-      - ./camel-routes-exercises/e0:/app
+      - ./:/app

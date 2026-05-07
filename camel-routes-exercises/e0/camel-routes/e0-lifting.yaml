@@ -22,7 +22,7 @@
               template: '#bean:lifting'
               format: "turtle"
               basePath: "outbox"
-              filename: "e1-output.ttl"
+              filename: "e0-produce-output.ttl"
         - log:
             message: "\n E0 lifting result: ${body}\n"
 

@@ -9,7 +9,7 @@
     from:
       uri: "file://inbox"
       parameters:
-        fileName: complete-kg.ttl
+        fileName: e1-input.ttl
         noop: true
       steps:
         - convertBodyTo:
@@ -26,7 +26,7 @@
             parameters:
               template: '#bean:lowering'
               basePath: "outbox"
-              filename: "e2-output.csv"
+              filename: "e2-produced-output.csv"
         - log:
             message: "\n E1 lowering result: ${body}\n"
 

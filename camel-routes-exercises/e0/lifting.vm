@@ -8,5 +8,5 @@ PREFIX tmjou: <https://w3id.org/mobility/transmodel/journeys#>
 Reader is already initialized with the GTFS data from Chimera route, we just need to get the dataframe.
 As it is a CSV a query parameter is not needed.
 *#
-$set($data = $reader.getDataframe())
+#set($data = $reader.getDataframe())
 
