@@ -100,6 +100,6 @@ docker run -v ./camel-routes-exercises/e2:/app cefriel/chimera:kg4di
 
 ```bash
 cd camel-routes-exercises/e2
-jbang --java-options="-Dhttp.agent=MyCustomAgent/1.0" camel@apache/camel run camel-routes/*.yaml --dep=mvn:com.cefriel:camel-chimera-mapping-template:4.6.0 GeoFunctions.java
+jbang --java-options="-Dhttp.agent=MyCustomAgent/1.0" camel@apache/camel run camel-routes/*.yaml --dep=mvn:com.cefriel:camel-chimera-mapping-template:4.6.0 ../functions/GeoFunctions.java
 ```
 
