@@ -1,5 +1,8 @@
 services:
   chimera:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: cefriel/chimera:kg4di
     volumes:
       - ./camel-routes-exercises/e2:/app

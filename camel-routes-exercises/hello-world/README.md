@@ -3,8 +3,9 @@
 ## Using Docker Compose
 
 ```bash
-cd camel-routes-exercises/e2
+cd camel-routes-exercises/hello-world
 docker compose up
+docker compose down
 ```
 
 ## Docker Command
@@ -12,6 +13,7 @@ docker compose up
 ```bash
 # from root directory
 docker run -v ./camel-routes-exercises/hello-world:/app cefriel/chimera:kg4di
+# container must be explicitly killed with command [docker kill <container_id_or_name>]
 ```
 
 ## JBang Command
