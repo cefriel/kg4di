@@ -37,15 +37,16 @@ This scenario is representative of a broad class of integration problems encount
 
 ---
 
-## Tutorial Structure
+## Tutorial - May 11th [Room 7]
 
 | Segment | Duration | Content |
 |---------|----------|---------|
-| **Introduction** | 15 min | Motivation, objectives and practical information |
-| **Part 1 — Data Interoperability Challenges** | 20 min + [5 min] | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; knowledge graphs as a unifying model + [presentation of the tutorial use case] |
-| **Part 2 — Mapping Approaches** | 20 min + [30 min] | State of the art; the any-to-RDF-to-any pattern; [RDF Mapping Language (RML)](https://w3id.org/rml/portal) vs [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) + [exercises for lifting/lowering mapping rules] |
-| **Break** | 30 min | |
-| **Part 3 — Chimera Framework** | 45 min + [45 min] | [Chimera](https://github.com/cefriel/chimera) concepts and related components; Chimera in action + [guided pipeline construction for the tutorial use case: ingestion, lifting, SPARQL enrichment, construction, lowering, and visualisation] |
+| **Introduction** | 09:00 - 09:15 | Motivation, objectives and practical information |
+| **Part 1 — Data Interoperability Challenges** | 09:15 - 09:45 | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; advantages of adopting knowledge graphs + [presentation of the tutorial use case] |
+| **Part 2 — Mapping Approaches** | 09:45 - 10:30 | State-of-the-art; Implementing an any-to-RDF-to-any pattern; [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) + [exercises for lifting/lowering mapping rules] |
+| **Break** | 10:30 - 11:00 | |
+| **Part 3 — Chimera Framework** | 11:00 - 12:15 | [Chimera](https://github.com/cefriel/chimera) concepts and related components + [guided pipeline construction for the tutorial use case: ingestion, lifting, SPARQL enrichment, construction, lowering, and visualisation] |
+| **Part 4 — Chimera in Action** | 12:15 - 12:30 | Practical experiences adopting Chimera to enable data interoperability across various domains |
 
 ---
 
