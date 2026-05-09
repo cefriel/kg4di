@@ -21,7 +21,7 @@ By the end of this tutorial, participants will be able to:
 - Write **lifting and lowering templates** using the [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) to convert between arbitrary formats and RDF
 - Apply **semantic transformations** within a pipeline to build and reshape knowledge graphs
 - Integrate external **data sources** (e.g. Wikidata SPARQL endpoint) as enrichment sources in a declarative pipeline
-- **Deploy and run** a complete end-to-end pipeline using the provided Docker environment
+- **Deploy and run** a complete end-to-end data integration pipeline feeding data to an actual application
 
 ---
 
@@ -69,7 +69,7 @@ Participants will configure and run each of the following stages during the hand
 
 Participants are expected to have:
 
-- A laptop with **Docker** installed (all software dependencies are provided as container images; no local JDK or Python installation is required): [How to install Docker](https://docs.docker.com/engine/install/)
+- A laptop with [**Docker** installed](https://docs.docker.com/engine/install/) (recommended, in this case no local JDK installation is required) or, alternatively, [**JBang** installed](https://www.jbang.dev/documentation/jbang/latest/installation.html). See tutorial repository for further instructions.
 - Basic familiarity with structured data formats (CSV, JSON)
 - Basic knowledge of **RDF** and the Semantic Web stack (recommended)
 
@@ -77,7 +77,7 @@ Participants are expected to have:
 
 ## Tutorial Materials
 
-Slides and all required materials will be made available on this page before the start of the conference.
+Slides and all required materials will be made available on this page before the start of the tutorial.
 
 - **Slides:** _To be published_
 - **Docker image & setup instructions:** [Instructions available here](https://github.com/cefriel/kg4di#prerequisites.) The setup can be tested by trying to run this [test exercise](https://github.com/cefriel/kg4di#hello-world)
