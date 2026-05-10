@@ -17,11 +17,10 @@ The session combines a conceptual introduction with a guided hands-on exercise u
 By the end of this tutorial, participants will be able to:
 
 - Explain the **any-to-RDF-to-any** integration pattern and its role in enabling semantic interoperability
-- Configure **[Apache Camel](https://camel.apache.org/) routes** augmented with [Chimera](https://github.com/cefriel/chimera) components for data transformation tasks
 - Write **lifting and lowering templates** using the [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) to convert between arbitrary formats and RDF
-- Apply **semantic transformations** within a pipeline to build and reshape knowledge graphs
-- Integrate external **data sources** (e.g. Wikidata SPARQL endpoint) as enrichment sources in a declarative pipeline
-- **Deploy and run** a complete end-to-end data integration pipeline feeding data to an actual application
+- Apply **semantic transformations** within a pipeline to build and reshape knowledge graphs by using **[Apache Camel](https://camel.apache.org/) routes** augmented with [Chimera](https://github.com/cefriel/chimera) components
+- Integrate external **data sources** as enrichment sources in a pipeline
+- **Deploy and run** a complete end-to-end semantic data integration pipeline feeding data to an actual application
 
 ---
 
