@@ -77,9 +77,9 @@ Participants are expected to have:
 
 ## Tutorial Materials
 
-Slides and all required materials will be made available on this page before the start of the tutorial.
+Slides and all required materials are available in the repository:
 
-- **Slides:** _To be published_
+- **Slides:** [Download slides](./assets/slides.pdf)
 - **Docker image & setup instructions:** [Instructions available here](https://github.com/cefriel/kg4di#prerequisites.) The setup can be tested by trying to run this [test exercise](https://github.com/cefriel/kg4di#hello-world)
 - **Chimera repository:** <https://github.com/cefriel/chimera>
 
