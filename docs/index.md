@@ -68,7 +68,8 @@ Participants will configure and run each of the following stages during the hand
 
 Participants are expected to have:
 
-- A laptop with [**Docker** installed](https://docs.docker.com/engine/install/) (recommended, in this case no local JDK installation is required) or, alternatively, [**JBang** installed](https://www.jbang.dev/documentation/jbang/latest/installation.html). See tutorial repository for further instructions.
+- A laptop with [**Docker** installed](https://docs.docker.com/engine/install/) (recommended, in this case no local JDK installation is required) or, alternatively, [**JBang** installed](https://www.jbang.dev/documentation/jbang/latest/installation.html). See [tutorial repository](https://github.com/cefriel/kg4di) for further instructions.
+- Repository https://github.com/cefriel/kg4di cloned or downloaded locally.
 - Basic familiarity with structured data formats (CSV, JSON)
 - Basic knowledge of **RDF** and the Semantic Web stack (recommended)
 
