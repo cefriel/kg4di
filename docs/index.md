@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Knowledge Graphs for Data Interoperability with Chimera (KG4DI)"
-description: "ISWC 2026 — Bari, Italy"
+description: "Discover how Knowledge Graphs can solve data interoperability challenges and then get hands-on with Chimera to build an interactive dashboard from heterogeneous data sources<br><strong>ISWC 2026 — Bari, Italy</strong>"
 permalink: /
 ---
 
