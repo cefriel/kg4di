@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Knowledge Graphs for Data Interoperability with Chimera (KG4DI)"
-description: "ISWC 2026 — Bari, Italy"
-permalink: /
+description: "ESWC 2026 — Dubrovnik, Croatia"
+permalink: /previous-editions/
 ---
 
 ## Overview
@@ -29,7 +29,7 @@ By the end of this tutorial, participants will be able to:
 
 To illustrate the pipeline stages, participants will work with a scenario involving the integration of public transport stop data (in [**GTFS**](https://gtfs.org/) format) with geographic and descriptive information retrieved from [**Wikidata**](https://www.wikidata.org/wiki/Wikidata:Main_Page). The resulting knowledge graph is visualised on an interactive online map that updates as data flows through the pipelines built by the participants.
 
-![Interactive map showing public transport stops enriched with Wikidata landmarks](./assets/media/dubrovnik.png)
+![Interactive map showing public transport stops enriched with Wikidata landmarks](../assets/media/dubrovnik.png)
 
 *An interactive dashboard fed by the Chimera pipeline that will be built during the hands-on session.*
 
@@ -37,7 +37,16 @@ This scenario is representative of a broad class of integration problems encount
 
 ---
 
-**Tutorial schedule and room details will be available as soon as the programme is finalised.**
+## Tutorial - May 11th [Room 7]
+
+| Segment | Duration | Content |
+|---------|----------|---------|
+| **Introduction** | 09:00 - 09:15 | Motivation, objectives and practical information |
+| **Part 1 — Data Interoperability Challenges** | 09:15 - 09:45 | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; advantages of adopting knowledge graphs + [presentation of the tutorial use case] |
+| **Part 2 — Mapping Approaches** | 09:45 - 10:30 | State-of-the-art; Implementing an any-to-RDF-to-any pattern; [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) + [exercises for lifting/lowering mapping rules] |
+| **Break** | 10:30 - 11:00 | |
+| **Part 3 — Chimera Framework** | 11:00 - 12:15 | [Chimera](https://github.com/cefriel/chimera) concepts and related components + [guided pipeline construction for the tutorial use case: ingestion, lifting, SPARQL enrichment, construction, lowering, and visualisation] |
+| **Part 4 — Chimera in Action** | 12:15 - 12:30 | Practical experiences adopting Chimera to enable data interoperability across various domains |
 
 ---
 
@@ -71,7 +80,7 @@ Participants are expected to have:
 
 Slides and all required materials are available in the repository:
 
-- **Slides:** [Download slides](./assets/slides.pdf)
+- **Slides:** [Download slides](../assets/slides.pdf)
 - **Docker image & setup instructions:** [Instructions available here](https://github.com/cefriel/kg4di#prerequisites.) The setup can be tested by trying to run this [test exercise](https://github.com/cefriel/kg4di#hello-world)
 - **Chimera repository:** <https://github.com/cefriel/chimera>
 
@@ -80,7 +89,7 @@ Slides and all required materials are available in the repository:
 ## Presenters
 
 <div class="presenter-bio">
-  <img src="./assets/media/grassi.jpg" alt="Marco Grassi" class="presenter-image">
+  <img src="../assets/media/grassi.jpg" alt="Marco Grassi" class="presenter-image">
   <div>
     <h3>Marco Grassi</h3>
     <p><b>Instructor</b> <em>Knowledge Technologies Researcher, Cefriel</em></p>
@@ -89,7 +98,7 @@ Slides and all required materials are available in the repository:
 </div>
 
 <div class="presenter-bio">
-  <img src="./assets/media/scrocca.jpg" alt="Mario Scrocca" class="presenter-image">
+  <img src="../assets/media/scrocca.jpg" alt="Mario Scrocca" class="presenter-image">
   <div>
     <h3>Mario Scrocca</h3>
     <p><b>Instructor</b> <em>Senior Knowledge Technologies Researcher, Cefriel</em></p>
@@ -98,7 +107,7 @@ Slides and all required materials are available in the repository:
 </div>
 
 <div class="presenter-bio">
-  <img src="./assets/media/carenini.jpg" alt="Alessio Carenini" class="presenter-image">
+  <img src="../assets/media/carenini.jpg" alt="Alessio Carenini" class="presenter-image">
   <div>
     <h3>Alessio Carenini</h3>
     <p><b>Organizer</b> <em>Senior Researcher and Software Architect, Cefriel</em></p>
@@ -107,20 +116,12 @@ Slides and all required materials are available in the repository:
 </div>
 
 <div class="presenter-bio">
-  <img src="./assets/media/celino.jpg" alt="Irene Celino" class="presenter-image">
+  <img src="../assets/media/celino.jpg" alt="Irene Celino" class="presenter-image">
   <div>
     <h3>Irene Celino</h3>
     <p><b>Organizer</b> <em>Research Line Manager, Cefriel</em></p>
     <p>Irene Celino coordinates research activities at Cefriel. Her interests span knowledge graphs, semantic interoperability, human-in-the-loop AI, and the human-centric evaluation of AI systems, with over 20 years of experience in cooperative research projects.</p>
   </div>
-</div>
-
----
-
-## Previous Editions
-
-<div style="background: #e8f0fc; padding: 1.5rem; border-radius: 6px; margin: 2rem 0; border-left: 4px solid #1a6bbf;">
-  <p>For information about past editions of this tutorial, including details on previous venues and editions, see <a href="./previous-editions"><strong>Previous Editions</strong></a>.</p>
 </div>
 
 ---
@@ -157,5 +158,22 @@ In: *Proceedings of the 24th International Semantic Web Conference (ISWC 2025)*.
 Springer Nature Switzerland, Cham (October 2025).
 [DOI](https://doi.org/10.1007/978-3-032-09530-5_22), [arXiv](https://arxiv.org/pdf/2508.02708)
 
+---
 
 
+<div class="ack-banner">
+<img src="https://www.smarty-project.eu/wp-content/uploads/2024/04/SMARTY-Electric-blue-only-logo-no-BG-COMPLETE.png" alt="SMARTY logo" style="height:32px;vertical-align:middle;margin-right:10px;">
+This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101140087 (<a href="https://www.smarty-project.eu/" target="_blank" rel="noopener noreferrer">SMARTY</a>, Chips Joint Undertaking).
+</div>
+<div class="ack-banner">
+<img src="https://www.smart-edge.eu/wp-content/uploads/2024/03/logo-smartedge-full.png" alt="SmartEdge logo" style="height:32px;vertical-align:middle;margin-right:10px;">
+This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101092908 (<a href="https://www.smart-edge.eu/" target="_blank" rel="noopener noreferrer">SmartEdge</a>).
+</div>
+<div class="ack-banner">
+<img src="../assets/media/urban_flow_project_logo.jpg" alt="UrbanFlow logo" style="height:32px;vertical-align:middle;margin-right:10px;">
+This work has been partially funded by the European Union's Horizon Europe research and innovation programme under grant agreement No. 101239472 (<a href="https://urban-flow.eu/" target="_blank" rel="noopener noreferrer">UrbanFlow</a>).
+</div>
+
+<div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #ddd;">
+  <p><a href="../">&larr; Back to current edition (ISWC 2026)</a></p>
+</div>
