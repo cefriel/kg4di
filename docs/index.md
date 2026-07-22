@@ -170,7 +170,10 @@ Slides and all required materials are available in the repository:
 ## Previous Editions
 
 <div class="index-previous-editions-callout">
-  <p>For information about past editions of this tutorial, including details on previous venues and editions, see <a href="./previous-editions"><strong>Previous Editions</strong></a>.</p>
+  <p>For information about past editions of this tutorial, see:</p>
+  <ul>
+    <li><a href="./eswc-2026"><strong>KG4DI Tutorial at ESWC 2026 in Dubrovnik</strong></a>.</li>
+  </ul>
 </div>
 
 ---
