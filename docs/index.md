@@ -24,6 +24,21 @@ permalink: /
   opacity: 0.85;
 }
 
+.page-header::before {
+  background: rgba(217, 114, 98, 0.4) !important;
+}
+
+.page-header .btn {
+  color: #fff !important;
+  background-color: rgb(217, 114, 98) !important;
+  border-color: rgb(186, 95, 81) !important;
+}
+
+.page-header .btn:hover {
+  background-color: rgb(186, 95, 81) !important;
+  border-color: rgb(160, 81, 69) !important;
+}
+
 .index-previous-editions-callout {
   background: rgba(217, 114, 98, 0.12);
   padding: 1.5rem;
