@@ -28,6 +28,13 @@ permalink: /
   background: rgba(217, 114, 98, 0.4) !important;
 }
 
+.page-header .project-name,
+.page-header .project-tagline {
+  opacity: 1 !important;
+  position: relative;
+  z-index: 2;
+}
+
 .page-header .btn {
   color: #fff !important;
   background-color: rgb(217, 114, 98) !important;
