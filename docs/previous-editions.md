@@ -80,7 +80,7 @@ Participants are expected to have:
 
 Slides and all required materials are available in the repository:
 
-- **Slides:** [Download slides](../assets/slides.pdf)
+- **Slides:** [Download slides](../assets/slides-eswc.pdf)
 - **Docker image & setup instructions:** [Instructions available here](https://github.com/cefriel/kg4di#prerequisites.) The setup can be tested by trying to run this [test exercise](https://github.com/cefriel/kg4di#hello-world)
 - **Chimera repository:** <https://github.com/cefriel/chimera>
 

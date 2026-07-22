@@ -5,6 +5,34 @@ description: "Discover how Knowledge Graphs can solve data interoperability chal
 permalink: /
 ---
 
+<style>
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: rgb(217, 114, 98);
+}
+
+.main-content a {
+  color: rgb(217, 114, 98);
+}
+
+.main-content a:hover {
+  color: rgb(217, 114, 98);
+  opacity: 0.85;
+}
+
+.index-previous-editions-callout {
+  background: rgba(217, 114, 98, 0.12);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+  border-left: 4px solid rgb(217, 114, 98);
+}
+</style>
+
 ## Overview
 
 This half-day tutorial introduces participants to the practical challenges of achieving data interoperability across heterogeneous sources and to the advantages of an approach based on knowledge graphs [[1](https://arxiv.org/pdf/2011.06423)]. Considering a practical scenario in the mobility domain (the integration of public transport data with open knowledge from Wikidata), participants will learn how knowledge graphs can support data harmonisation and fusion.
@@ -29,7 +57,7 @@ By the end of this tutorial, participants will be able to:
 
 To illustrate the pipeline stages, participants will work with a scenario involving the integration of public transport stop data (in [**GTFS**](https://gtfs.org/) format) with geographic and descriptive information retrieved from [**Wikidata**](https://www.wikidata.org/wiki/Wikidata:Main_Page). The resulting knowledge graph is visualised on an interactive online map that updates as data flows through the pipelines built by the participants.
 
-![Interactive map showing public transport stops enriched with Wikidata landmarks](./assets/media/dubrovnik.png)
+![Interactive map showing public transport stops enriched with Wikidata landmarks](./assets/media/bari.png)
 
 *An interactive dashboard fed by the Chimera pipeline that will be built during the hands-on session.*
 
@@ -119,7 +147,7 @@ Slides and all required materials are available in the repository:
 
 ## Previous Editions
 
-<div style="background: #e8f0fc; padding: 1.5rem; border-radius: 6px; margin: 2rem 0; border-left: 4px solid #1a6bbf;">
+<div class="index-previous-editions-callout">
   <p>For information about past editions of this tutorial, including details on previous venues and editions, see <a href="./previous-editions"><strong>Previous Editions</strong></a>.</p>
 </div>
 
