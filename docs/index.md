@@ -87,7 +87,16 @@ This scenario is representative of a broad class of integration problems encount
 
 ---
 
-**Tutorial schedule and room details will be available as soon as the programme is finalised.**
+## Tutorial - October 26th [Room Sez. 6 - to be confirmed]
+
+| Segment | Duration | Content |
+|---------|----------|---------|
+| **Introduction** | 09:00 - 09:15 | Motivation, objectives and practical information |
+| **Part 1 — Data Interoperability Challenges** | 09:15 - 09:45 | Key challenges in heterogeneous data integration; limitations of ad-hoc approaches; advantages of adopting knowledge graphs + [presentation of the tutorial use case] |
+| **Part 2 — Mapping Approaches** | 09:45 - 10:40 | State-of-the-art; Implementing an any-to-RDF-to-any pattern; [Mapping Template Language (MTL)](https://github.com/cefriel/mapping-template/wiki/Mapping-Template-Language-(MTL)) + [exercises for lifting/lowering mapping rules] |
+| **Break** | 10:40 - 11:10 | |
+| **Part 3 — Chimera Framework** | 11:10 - 12:25 | [Chimera](https://github.com/cefriel/chimera) concepts and related components + [guided pipeline construction for the tutorial use case: ingestion, lifting, SPARQL enrichment, construction, lowering, and visualisation] |
+| **Part 4 — Chimera in Action** | 12:25 - 12:50 | Practical experiences adopting Chimera to enable data interoperability across various domains |
 
 ---
 
