@@ -18,7 +18,8 @@ for _s in ('stdout', 'stderr'):
         setattr(sys, _s, io.TextIOWrapper(_stream.buffer, encoding='utf-8', errors='replace'))
 
 app = FastAPI(title="Map Visualization API")
-csv_length_limit: int = 300
+stops_limit: int = 200
+landmarks_limit: int = 200
 
 # Store locations in memory
 locations: List[dict] = []
@@ -87,10 +88,19 @@ async def add_location(request: Request, authorization: str = Header(None)):
     print(f"[DEBUG] CSV headers: {csv_reader.fieldnames}")
 
     added_locations = []
+    stops_added = 0
+    landmarks_added = 0
     for row in csv_reader:
-        if len(added_locations) >= csv_length_limit:
-            print(f"[DEBUG] Reached {csv_length_limit}-row limit, stopping processing")
-            break
+        item_type = row.get('type', '').strip().lower()
+        
+        # Check limits based on type
+        if item_type == 'landmark' and landmarks_added >= landmarks_limit:
+            print(f"[DEBUG] Reached {landmarks_limit}-landmark limit, skipping")
+            continue
+        elif item_type == 'stop' and stops_added >= stops_limit:
+            print(f"[DEBUG] Reached {stops_limit}-stop limit, skipping")
+            continue
+        
         print(f"[DEBUG] Processing row: {dict(row)}")
         try:
             location_data = {
@@ -103,6 +113,11 @@ async def add_location(request: Request, authorization: str = Header(None)):
             print(f"[DEBUG] Parsed location: {location_data}")
             locations.append(location_data)
             added_locations.append(location_data)
+            
+            if item_type == 'landmark':
+                landmarks_added += 1
+            elif item_type == 'stop':
+                stops_added += 1
         except (ValueError, KeyError) as e:
             print(f"[DEBUG] Skipped row due to error: {e} | row={dict(row)}")
             continue
