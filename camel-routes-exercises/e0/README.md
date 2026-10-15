@@ -25,6 +25,6 @@ docker run -v ./camel-routes-exercises/e0:/app cefriel/chimera:kg4di
 
 ```bash
 cd camel-routes-exercises/e0
-jbang camel@apache/camel run camel-routes/*.yaml --dep=mvn:com.cefriel:camel-chimera-mapping-template:4.6.0
+jbang camel@apache/camel run camel-routes/*.yaml --dep=mvn:com.cefriel:camel-chimera-mapping-template:4.6.1
 ```
 
