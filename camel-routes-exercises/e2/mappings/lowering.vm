@@ -15,6 +15,8 @@ WHERE {
   OPTIONAL { ?s schema:image ?image . }
   OPTIONAL { ?s geo:hasGeometry [ geo:asWKT ?coord ] . }
 }
+ORDER BY ?s
+LIMIT 10
 "))
  
 #set ($landmarks = $reader.getDataframe("
@@ -30,9 +32,8 @@ WHERE {
  
 lat,lon,label,type,image
 #foreach ($stop in $stops)
-$functions.getLat($stop.coord),$functions.getLong($stop.coord),$stop.label,stop,
+"$functions.getLat($stop.coord)","$functions.getLong($stop.coord)","$stop.label","stop",""
 #end
 #foreach ($landmark in $landmarks)
-#set($rowimage = "#if($landmark.image)$landmark.image#{else}""#end")
-$functions.getLat($landmark.coord),$functions.getLong($landmark.coord),$landmark.label,landmark,$rowimage
+"$functions.getLat($landmark.coord)","$functions.getLong($landmark.coord)","$landmark.label","landmark",#if($landmark.image)$landmark.image#{else}""#end
 #end
