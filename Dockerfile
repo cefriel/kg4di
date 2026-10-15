@@ -12,11 +12,6 @@ RUN jbang trust add https://github.com/apache/camel/ \
 # Copy Java helper
 COPY camel-routes-exercises/functions/GeoFunctions.java /opt/helpers/GeoFunctions.java
 
-# Pre-fetch the mapping-template dependency into jbang's cache
-RUN printf '//DEPS com.cefriel:camel-chimera-mapping-template:4.6.0\nclass Warmup { public static void main(String[] a) {} }\n' > /tmp/Warmup.java \
- && jbang build /tmp/Warmup.java \
- && rm /tmp/Warmup.java
-
 # Reset ENTRYPOINT inherited from jbangdev/jbang (which is ["jbang"]),
 # otherwise shell-form CMD gets passed as arguments to jbang.
 ENTRYPOINT []
@@ -26,4 +21,4 @@ CMD jbang --java-options="-Dhttp.agent=MyCustomAgent/1.0" \
   camel@apache/camel run \
   camel-routes/*.yaml \
   /opt/helpers/GeoFunctions.java \
-  --dep=mvn:com.cefriel:camel-chimera-mapping-template:4.6.0
+  --dep=mvn:com.cefriel:camel-chimera-mapping-template:4.6.1
